@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IP Bulk Translator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>IP BULK TRANSLATOR</h1>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            <h2>Enter IP addresses separated by commas, spaces, or new lines</h2>
+            <textarea id="ip-input" placeholder="e.g., 192.168.1.1, 8.8.8.8, 10.0.0.1"></textarea>
+            <button id="translate-btn">Translate</button>
+            <button id="print-btn" class="hidden">Print</button>
+            <button id="csv-btn" class="hidden">Export to CSV</button>
+            <div id="loading" class="hidden">Loading...</div>
+            <div id="output"></div>
+            <div id="pagination" class="hidden">
+                <button id="prev-page">Previous</button>
+                <span id="page-info"></span>
+                <button id="next-page">Next</button>
+            </div>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
